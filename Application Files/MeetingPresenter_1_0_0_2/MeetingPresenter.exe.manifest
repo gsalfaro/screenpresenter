@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MeetingPresenter.exe" version="1.0.0.2" publicKeyToken="7d7b6133ac3473a6" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="meeting.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MeetingPresenter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MeetingPresenter.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3kMO18dkE9GqRI+gaokb0t0Xfha3WiylVKOJ4tTNww8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DotNetZip.dll" size="472064">
+      <assemblyIdentity name="DotNetZip" version="1.16.0.0" publicKeyToken="6583C7C814667745" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>jpwDYum/s8Sa9Z4bTTdtPoWxOu0PvD9cDh68mcBzRfM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kaVN2Ii07s0//TVJnvjog+UTw4ra0vZPV7k3eigMImU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MeetingPresenter.exe" size="1514936">
+      <assemblyIdentity name="MeetingPresenter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>GcwfcDFeh12aCBXe9KbHXOXL3uj9FNYUQFT7SQ/fr/A=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsAPICodePack.Core.dll" size="102912">
+      <assemblyIdentity name="Microsoft.WindowsAPICodePack.Core" version="7.0.4.0" publicKeyToken="8AFB38E9204FC0A9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>w9IP9GqIiyEgdT5GS3/5biQS/KcmDtAlZ+ZNQdmfvdM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.WindowsAPICodePack.Shell.dll" size="522752">
+      <assemblyIdentity name="Microsoft.WindowsAPICodePack.Shell" version="7.0.4.0" publicKeyToken="8AFB38E9204FC0A9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Dn6N7rcs/KW8WOZde8x1+VYtobloyaMv2xK0MJ2kPmY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="meeting.ico" size="270398">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Sz7VPtIIfCV2RTFTIEUffEhZZYv8oapWdD/y9oT9WCs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="MeetingPresenter.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=BETHEL\GSIMUTA" issuerKeyHash="4527fdd8ad74c01e514830e1db19d96f02b1d2c6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Prm7T8GhZDtUq8OcBhX0cAGewVONz35F8ZSyQbvsbYI=</DigestValue></Reference></SignedInfo><SignatureValue>q9ZGJBQzRAi8PZV/HL5t6MP3JU/fXza+hnurO56fTEKh759inEeFC9GgYfuTKVtcVOCDtsPrHDgwCrQc3Ve8vFjkhhU2OTp1RE3l9cdCsWrTHb4OIfrJTpdc9Ydd7pCOS6QMEe1ArePGEM7Q6AJAT9+J96cATMyMuT2aB62jxCg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uY25aXKQmi7fFOhkDJtKhKyeIWntpEBkPPA/HVMAmns/2VQn7TqPmBtdX0J2X0pBoyd2HW5p89/DsXNS4JuA+5qC4sELJTsEUQvT11aKZRCLt30iehA38ABAYPuDvwte6+bSJlMmJzcKNhygZRjLRXeE8pNNMziJ+JLPgUc67Wk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="826decbb41b294f1457ecf8d53c19e0170f415069cc3ab543b64a1c14fbbb93e" Description="" Url=""><as:assemblyIdentity name="MeetingPresenter.exe" version="1.0.0.2" publicKeyToken="7d7b6133ac3473a6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BETHEL\GSIMUTA</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>EQ9sRcVK/s9JKWT8IX0lFhDwwXN7gevzHisVXN43gss=</DigestValue></Reference></SignedInfo><SignatureValue>b62F7drmveJXxAa2PdMEJFbArQvX6+vic2G/687Za3dPkPotX6hOZ0Uz5Xe1ODDQdI4lTNQHUnIJuvdSqRE6+KhIC0IgOMV2iwVXeqGfAhUt48ZO7K7mKNeyKy8vETnr+iD3iIWA8tftACAsbeWLAGa/winC0FOmnVFPmN3f/9Q=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uY25aXKQmi7fFOhkDJtKhKyeIWntpEBkPPA/HVMAmns/2VQn7TqPmBtdX0J2X0pBoyd2HW5p89/DsXNS4JuA+5qC4sELJTsEUQvT11aKZRCLt30iehA38ABAYPuDvwte6+bSJlMmJzcKNhygZRjLRXeE8pNNMziJ+JLPgUc67Wk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQMQw7wMmP055C4QxxYTfH0TANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAQgBFAFQASABFAEwAXABHAFMASQBNAFUAVABBMB4XDTIzMDgyMzIzMDcxMVoXDTI0MDgyMzA1MDcxMVowJzElMCMGA1UEAx4cAEIARQBUAEgARQBMAFwARwBTAEkATQBVAFQAQTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuY25aXKQmi7fFOhkDJtKhKyeIWntpEBkPPA/HVMAmns/2VQn7TqPmBtdX0J2X0pBoyd2HW5p89/DsXNS4JuA+5qC4sELJTsEUQvT11aKZRCLt30iehA38ABAYPuDvwte6+bSJlMmJzcKNhygZRjLRXeE8pNNMziJ+JLPgUc67WkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQBKoM/0lz77Uxg9xl1DwF+tabx4GwFw7C89t6H41E4AXUAvx+aZvronBUe97yMK8vpR/jdGXkrmYciqYZ9nxa/+fSrItZBNiAsPFvvBQJwQtzIZ1c6LGS8nbJHV8EByIArcSJeaDxSQJzJGCD3Iu0bHol4fub5qYAPUybbZsTTfng==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
